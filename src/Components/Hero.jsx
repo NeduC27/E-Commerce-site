@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from '../assets/Images/Hero Image3.jpg'
 
 function Hero() {
   return (
@@ -19,7 +20,7 @@ function Hero() {
         </div>
         {/* Hero Right Side */}      
         <div className=''>
-           <img src="/Image/Hero Image2.jpg" className='w-full sm:w-[500px] hover:scale-105 hover:border cursor-pointer transition-transform duration-500 ease-in-out sm:border-l sm:border-l-gray-700'/> 
+           <img src={Image} className='w-full sm:w-[500px] hover:scale-105 hover:border cursor-pointer transition-transform duration-500 ease-in-out sm:border-l sm:border-l-gray-700'/> 
         </div>  
       
     </div>

@@ -6,6 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { ShopContext } from '../Context/ShopContext';
+import Logo from '../assets/Images/E-Commerce-logo.png';
 
 function Navbar() {
 
@@ -15,7 +16,7 @@ function Navbar() {
   return (
     <div className='flex items-center justify-between py-5 font-medium'>
       <Link to='/'>
-       <img src="/Images/E-Commerce-logo.png" className='w-64 rounded-sm  border border-gray-400 hover:scale-95 transition ease-in-out duration-500 cursor-pointer'/>
+       <img src={Logo} className='w-64 rounded-sm  border border-gray-400 hover:scale-95 transition ease-in-out duration-500 cursor-pointer'/>
        </Link>
       <ul className='hidden sm:flex gap-5 text-sm '>
         <NavLink to='/' className='flex flex-col items-center gap-1'>
