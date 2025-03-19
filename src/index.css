@@ -5,6 +5,12 @@ a.active hr{
   display: block;
 }
 
+body {
+  
+  background-color: rgb(226, 192, 198);
+  
+}
+
 * {
   font-family: outfit;
 }
