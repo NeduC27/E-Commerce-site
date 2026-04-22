@@ -1,34 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --color-premium-bg: #FBF9F6;
+  --color-premium-text: #1F1F1F;
+  --color-premium-accent: #B89D8E;
+  --shadow-premium: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+
 a.active hr{
   display: block;
+  background-color: var(--color-premium-accent);
 }
 
 body {
-  
-  background-color: rgb(226, 192, 198);
-  
+  background-color: var(--color-premium-bg);
+  color: var(--color-premium-text);
+  overflow-x: hidden;
 }
 
 * {
-  font-family: outfit;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .prata-regular {
   font-family: "Prata", serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #E5E5E5;
+  border-radius: 10px;
+}
 
 @media (max-width: 640px) {
   a.active {
-    background-color: black;
-    color: white;
+    background-color: var(--color-premium-text);
+    color: var(--color-premium-bg);
   }
 }
+
