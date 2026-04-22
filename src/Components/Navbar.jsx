@@ -96,12 +96,12 @@ function Navbar() {
             className='fixed inset-0 bg-white z-[60] flex flex-col'
           >
             <div className='flex items-center justify-between p-6 border-b'>
-              <img src={Logo} className='w-40' alt="Logo"/>
+              <img src={Logo} className='w-40 size-14 xl:size-20' alt="Logo"/>
               <button onClick={() => setVisible(false)}>
                 <IoIosClose size={32} />
               </button>
             </div>
-            <div className='flex flex-col p-6 gap-6'>
+            <div className='flex flex-col p-6 gap-3 bg-white'>
               {['HOME', 'COLLECTION', 'ABOUT', 'CONTACT'].map((item) => (
                 <NavLink 
                   key={item} 
